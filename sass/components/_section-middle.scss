@@ -1,65 +1,126 @@
 .section-middle {
+
   &__container {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desctop) {
+      display: flex;
+      // justify-content: center;
+      width: $desctop;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 94px;
+      margin-bottom: 94px;
+    }
   }
   &__skills {
-    display: flex;
-    padding: 0;
+    // display: flex;
+    // padding: 0;
+    @media screen and (min-width: $mobile) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media screen and (min-width: $tablet) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media screen and (min-width: $desctop) {
+      display: flex;
+    }
+  }
+  &__skills:not(:last-child) {
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 30px;
+    }
   }
   &__skill-one,
   &__skill-four {
-    display: flex;
-    flex-direction: column;
+    @media screen and (min-width: $desctop) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__skill-two,
   &__skill-three {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-    height: 74px;
+    @media screen and (min-width: $desctop) {
+      display: flex;
+      flex-direction: column;
+      width: 270px;
+      height: 74px;
+    }
   }
   &__skill-one,
   &__skill-two,
   &__skill-three {
-    margin-right: 30px;
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desctop) {
+      margin-right: 30px;
+    }
   }
   &__skill-four {
     padding: 0;
   }
   &__skill-name {
-    display: block;
-    width: 270px;
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (min-width: $desctop) {
+      display: block;
+      width: 270px;
+    }
   }
   &__team-skill {
-    display: block;
-    width: 270px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
+    @media screen and (min-width: $desctop) {
+      display: block;
+      width: 270px;
+    }
   }
   &__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 270px;
-    min-height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
-    margin-bottom: 30px;
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 450px;
+      height: 120px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 354px;
+      height: 120px;
+    }
+    @media screen and (min-width: $desctop) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 270px;
+      min-height: 120px;
+      margin-bottom: 30px;
+    }
   }
 }

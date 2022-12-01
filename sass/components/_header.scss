@@ -1,8 +1,9 @@
 .header {
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %section;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
