@@ -3,8 +3,6 @@
     padding-left: 15px;
     padding-right: 15px;
     background: #f5f4fa;
-    padding-left: 15px;
-    padding-right: 15px;
     @media screen and (min-width: $mobile) {
       width: $mobile;
       margin-top: 60px;
@@ -35,7 +33,7 @@
     line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
-    
+
     @media screen and (min-width: $desctop) {
       margin-bottom: 50px;
       margin-left: auto;
@@ -48,8 +46,6 @@
     }
   }
   &__photo {
-    padding-left: 15px;
-    padding-right: 15px;
     @media screen and (min-width: $mobile) {
       width: 450px;
     }

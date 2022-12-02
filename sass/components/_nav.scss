@@ -1,7 +1,23 @@
 .nav {
+  &__menu-button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    background: inherit;
+  }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
   &__list {
     display: flex;
     padding: 0;
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
   }
   &__item:not(:last-child) {
     margin-right: 50px;

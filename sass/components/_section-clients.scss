@@ -1,6 +1,7 @@
 .section-clients {
   &__container {
     margin-top: 60px;
+    margin-bottom: 60px;
     @media screen and (min-width: $desctop) {
       width: $desctop;
       display: flex;
@@ -38,12 +39,21 @@
   &__companys-item {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+
     @media screen and (min-width: $desctop) {
       display: flex;
       padding: 0;
     }
+    @media screen and (min-width: $mobile){
+      flex-wrap: wrap;
+      gap: 30px;
+      &:nth-child(2n + 1) {
+        padding-left: 0;
+      }
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
+      }
   }
   &__companys-link {
     display: flex;
@@ -67,6 +77,7 @@
     @media screen and (min-width: $desctop) {
       width: 170px;
     }
+
   }
   &__companys-link:hover,
   &__companys-link:focus {

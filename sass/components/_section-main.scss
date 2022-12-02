@@ -8,11 +8,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/bgmain.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/bg@2x.jpg);
-    }
     @media screen and (min-width: 481px) {
       background-image: url(../images/bgmain.jpg);
       @media (min-device-pixel-ratio: 2),
@@ -44,23 +39,35 @@
     }
   }
   &__name {
-    width: 696px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
+    font-size: 26px;
+    line-height: 1.16;
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
+    // @media screen and (min-width: $mobile) {
+    //   padding-top: 118px;
+    // }
+    // @media screen and (min-width: $tablet) {
+    //   // padding-top: 118px;
+    // }
+    @media screen and (min-width: $desctop) {
+      width: 696px;
+
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.4;
+      letter-spacing: 0.06em;
+    }
   }
   &__btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 216px;
+    width: 200px;
     height: 50px;
     padding: 0;
     border: 0;
@@ -76,6 +83,15 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $mobile) {
+      // padding-bottom: 118px;
+    }
+    @media screen and (min-width: $tablet) {
+      // padding-top: 118px;
+    }
+    @media screen and (min-width: $desctop) {
+      width: 216px;
+    }
   }
   &__btn:hover,
   &__btn:focus {
