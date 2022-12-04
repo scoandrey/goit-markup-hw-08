@@ -1,15 +1,5 @@
 .nav {
-  &__menu-button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
-    background: inherit;
-  }
-  @media screen and (max-width: $mobile) {
+  @media screen and (min-width: $mobile) {
     display: none;
   }
   &__list {

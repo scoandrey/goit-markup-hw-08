@@ -21,6 +21,96 @@
   <body>
     <header class="header">
       <div class="header__container">
+        <button
+          class="header__menu-button is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="header__menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Мобильное меню">
+            <use
+              class="header__icon-close"
+              href="./images/icons.svg#icon-close"
+            ></use>
+            <use
+              class="header__icon-menu"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+        <div
+          class="header__menu-container is-open"
+          id="header__menu-container"
+          data-menu
+        >
+          <p class="header__menu-nav">
+            <a class="" href="https://scoandrey.github.io/goit-markup-hw-07/"
+              >Студія</a
+            >
+          </p>
+          <p class="header__menu-nav">
+            <a
+              class=""
+              href="https://scoandrey.github.io/goit-markup-hw-07/portfolio.html"
+              >Портфоліо</a
+            >
+          </p>
+          <p class="header__menu-nav"><a class="" href="">Контакти</a></p>
+          <p>
+            <a class="header__menu-tel" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </p>
+          <p>
+            <a class="header__menu-mail" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </p>
+          <ul class="header__menu-social-list">
+            <li class="header__menu-social">
+              <a
+                class=""
+                href="https://instagram.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-instagram"
+              >Instagram
+              </a>
+            </li>
+            <li class="header__menu-social">
+              <a
+                class=""
+                href="https://twitter.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-twitter"
+              >Twitter
+              </a>
+            </li>
+            <li class="header__menu-social">
+              <a
+                class=""
+                href="https://facebook.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-facebook"
+              >Facebook
+              </a>
+            </li>
+            <li class="header__menu-social">
+              <a
+                class=""
+                href="https://linkedin.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-linkedin"
+              >linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <a href="" class="logo logo--header">
           <span class="logo__first-part">Web</span
           ><span class="logo__last-part--dark">Studio</span>
@@ -45,12 +135,6 @@
               <a class="nav__link link" href="">Контакти</a>
             </li>
           </ul>
-          <button class="nav__menu-button" type="button">
-            <svg width="40px" hight="40px">
-              <use href="./images/icons.svg#icon-close"></use>
-              <use href="./images/icons.svg#icon-threebars"></use>
-            </svg>
-          </button>
         </nav>
         <ul class="nav__list nav__list--margl-mail">
           <li class="nav__item">

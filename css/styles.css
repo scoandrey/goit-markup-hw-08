@@ -54,6 +54,51 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+
+/* .menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 796;
+}
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+.menu-button .is-open .icon-close {
+  display: block;
+}
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+
+<button
+type="button"
+  class="menu-button"
+  aria-expanded="false"
+  aria-controls="menu-container"
+  data-menu-button
+>
+  <svg width="40" height="40" aria-label="Мобільне меню">
+    <use
+      class="menu-button__icon-close"
+      href="./images/icons.svg#icon-close"
+    ></use>
+    <use
+      class="menu-button__icon-menu"
+      href="./images/icons.svg#icon-menu"
+    ></use>
+  </svg>
+</button>
+<div class="menu-container" id="menu-container" data-menu>
+  Студія
+</div> */
+
+
 /* logo */
 
 .logo {

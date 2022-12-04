@@ -1,8 +1,8 @@
 .section-services {
-  @media screen and (max-width: $mobile){
+  @media screen and (min-width: $mobile) {
     display: none;
   }
-  &__container {
+  &__container { 
     display: flex;
     flex-direction: column;
     justify-content: center;
