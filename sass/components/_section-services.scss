@@ -1,5 +1,5 @@
 .section-services {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $desctop) {
     display: none;
   }
   &__container { 

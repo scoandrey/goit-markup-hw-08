@@ -1,21 +1,17 @@
 .section-middle {
-
   &__container {
     padding-left: 15px;
     padding-right: 15px;
     @media screen and (min-width: $mobile) {
-      width: $mobile;
       margin-top: 60px;
       margin-bottom: 60px;
     }
     @media screen and (min-width: $tablet) {
-      width: $tablet;
       margin-top: 60px;
       margin-bottom: 60px;
     }
     @media screen and (min-width: $desctop) {
       display: flex;
-      // justify-content: center;
       width: $desctop;
       margin-left: auto;
       margin-right: auto;
@@ -24,15 +20,9 @@
     }
   }
   &__skills {
-    // display: flex;
-    // padding: 0;
-    @media screen and (min-width: $mobile) {
-      // padding-left: 15px;
-      // padding-right: 15px;
-    }
     @media screen and (min-width: $tablet) {
-      // padding-left: 15px;
-      // padding-right: 15px;
+      display: flex;
+      flex-wrap: wrap;
     }
     @media screen and (min-width: $desctop) {
       display: flex;
@@ -41,6 +31,17 @@
   &__skills:not(:last-child) {
     @media screen and (min-width: $mobile) {
       margin-bottom: 30px;
+    }
+  }
+  &__skill-general {
+    @media screen and (max-width: $desctop) {
+width: 354px;
+    }
+  }
+  &__skill-one,
+  &__skill-three {
+  @media screen and (max-width: $desctop) {
+      margin-right: 30px;
     }
   }
   &__skill-one,
@@ -65,6 +66,7 @@
     @media screen and (min-width: $mobile) {
       margin-bottom: 30px;
     }
+
     @media screen and (min-width: $desctop) {
       margin-right: 30px;
     }
@@ -73,13 +75,15 @@
     padding: 0;
   }
   &__skill-name {
-    text-align: center;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (max-width: $mobile) {
+      text-align: center;
+    }
     @media screen and (min-width: $desctop) {
       display: block;
       width: 270px;
@@ -106,8 +110,6 @@
       width: 450px;
       height: 120px;
       margin-bottom: 30px;
-      // padding-left: 15px;
-      // padding-right: 15px;
     }
     @media screen and (min-width: $tablet) {
       display: flex;

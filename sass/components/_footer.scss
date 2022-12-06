@@ -17,6 +17,12 @@
       justify-content: center;
     }
   }
+  &__container-address {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
   &__address-li:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -44,16 +50,8 @@
   }
   &__connection {
     margin-left: 70px;
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       margin-top: 60px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @media screen and (min-width: $tablet) {
-      margin-top: 60px;
-      margin-left: auto;
-      margin-right: auto;
-      
     }
   }
   &__connect {
@@ -104,7 +102,11 @@
     }
   }
   &__form {
-
+    @media screen and (max-width: $desctop) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__form-input {
     height: 50px;
@@ -112,8 +114,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    @media screen and (min-width: $mobile) {
-      width: 100%;
+    @media screen and (max-width: $desctop) {
+      width: 450px;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 450px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: $desctop) {
@@ -125,7 +131,7 @@
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    justify-content: center; 
+    justify-content: center;
     width: 200px;
     height: 50px;
     color: #ffffff;
@@ -139,7 +145,7 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     @media screen and (min-width: $mobile) {
-margin-bottom: 60px;
+      margin-bottom: 60px;
     }
     @media screen and (min-width: $desctop) {
       margin-left: 12px;

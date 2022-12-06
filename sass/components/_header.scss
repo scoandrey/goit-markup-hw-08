@@ -1,33 +1,38 @@
 .header {
   position: relative;
   &__container {
-    // @extend %section;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     border-bottom: 1px solid #ececec;
-    @media screen and (max-width: $mobile) {
-      display: flex;
-      align-items: center;
+    @media screen and (max-width: $tablet) {
       height: 60px;
     }
+    // @media screen and (max-width: $tablet) {
+    //   justify-content: center;
+    // }
+    @media screen and (min-width: $desctop) {
+      justify-content: center;
+    }
   }
+
   &__menu-button {
     z-index: 999;
     display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
     position: absolute;
     top: 10px;
     right: 15px;
+    margin: 0;
+    padding: 0;
+    border: none;
     cursor: pointer;
     background: transparent;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
   }
   &__menu-button &__icon-close {
     display: none;
@@ -45,14 +50,14 @@
     left: 0;
     width: 100%;
     height: 796px;
-    background-color: aqua;
+    background-color: #ffffff;
 
     &.is-open {
       display: block;
     }
   }
   &__menu-nav {
-    margin-left: 40px;
+    padding-left: 40px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;

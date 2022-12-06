@@ -1,17 +1,18 @@
 .nav {
-  @media screen and (min-width: $mobile) {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   &__list {
     display: flex;
     padding: 0;
-    @media screen and (max-width: $mobile) {
-      display: none;
-    }
+
   }
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+
   &__link {
     position: relative;
     padding-bottom: 32px;
@@ -55,12 +56,14 @@
   }
   &__list--margl-mail {
     margin-left: 318px;
+        @media screen and (max-width: $desctop) {
+          display: block;
+          margin-left: 97px;
+    }
   }
   &__mailtel {
     display: flex;
     align-items: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -69,6 +72,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: $desctop) {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
   }
   &__tel {
     font-weight: 500;
@@ -80,5 +87,18 @@
   &__address {
     margin-right: 10px;
     fill: currentColor;
+  }
+  &__item-mail{
+    margin-right: 30px;
+    @media screen and (max-width: $desctop) {
+      margin-top: 21px;
+      margin-bottom: 10px;
+    }
+  }
+  &__item-tel{
+    @media screen and (max-width: $desctop) {
+      margin-bottom: 21px;
+    }
+    
   }
 }

@@ -22,7 +22,7 @@
     <header class="header">
       <div class="header__container">
         <button
-          class="header__menu-button is-open"
+          class="header__menu-button is open"
           type="button"
           aria-expanded="false"
           aria-controls="header__menu-container"
@@ -30,17 +30,17 @@
         >
           <svg width="40" height="40" aria-label="Мобильное меню">
             <use
-              class="header__icon-close"
-              href="./images/icons.svg#icon-close"
-            ></use>
-            <use
               class="header__icon-menu"
               href="./images/icons.svg#icon-menu"
+            ></use>
+            <use
+              class="header__icon-close"
+              href="./images/icons.svg#icon-close"
             ></use>
           </svg>
         </button>
         <div
-          class="header__menu-container is-open"
+          class="header__menu-container"
           id="header__menu-container"
           data-menu
         >
@@ -75,7 +75,7 @@
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 aria-label="icon-instagram"
-              >Instagram
+                >Instagram
               </a>
             </li>
             <li class="header__menu-social">
@@ -85,7 +85,7 @@
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 aria-label="icon-twitter"
-              >Twitter
+                >Twitter
               </a>
             </li>
             <li class="header__menu-social">
@@ -95,7 +95,7 @@
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 aria-label="icon-facebook"
-              >Facebook
+                >Facebook
               </a>
             </li>
             <li class="header__menu-social">
@@ -105,7 +105,7 @@
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 aria-label="icon-linkedin"
-              >linkedin
+                >linkedin
               </a>
             </li>
           </ul>
@@ -115,6 +115,7 @@
           <span class="logo__first-part">Web</span
           ><span class="logo__last-part--dark">Studio</span>
         </a>
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -135,25 +136,26 @@
               <a class="nav__link link" href="">Контакти</a>
             </li>
           </ul>
+
+          <ul class="nav__list nav__list--margl-mail">
+            <li class="nav__item-mail">
+              <a class="nav__mailtel link" href="mailto:info@devstudio.com">
+                <svg class="nav__address" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="nav__item-tel">
+              <a class="nav__mailtel link" href="tel:+380961111111"
+                ><svg class="nav__address" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
-        <ul class="nav__list nav__list--margl-mail">
-          <li class="nav__item">
-            <a class="nav__mailtel link" href="mailto:info@devstudio.com">
-              <svg class="nav__address" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__mailtel link" href="tel:+380961111111"
-              ><svg class="nav__address" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -253,7 +255,7 @@
       <section class="section-middle">
         <div class="section-middle__container">
           <ul class="section-middle__skills">
-            <li class="section-middle__skill-one">
+            <li class="section-middle__skill-one section-middle__skill-general">
               <div class="section-middle__icons">
                 <svg class="section-middle__antenna" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -265,7 +267,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="section-middle__skill-two">
+            <li class="section-middle__skill-two section-middle__skill-general">
               <div class="section-middle__icons">
                 <svg class="section-middle__clock" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -277,7 +279,9 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="section-middle__skill-three">
+            <li
+              class="section-middle__skill-three section-middle__skill-general"
+            >
               <div class="section-middle__icons">
                 <svg class="section-middle__diagram" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -288,7 +292,9 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="section-middle__skill-four">
+            <li
+              class="section-middle__skill-four section-middle__skill-general"
+            >
               <div class="section-middle__icons">
                 <svg class="section-middle__astronaut" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -309,6 +315,7 @@
           <ul class="section-services__picture-list">
             <li class="section-services__img">
               <img
+                srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="Лэптоп"
                 width="370"
@@ -320,6 +327,7 @@
             </li>
             <li class="section-services__img">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Смартфон"
                 width="370"
@@ -331,6 +339,7 @@
             </li>
             <li class="section-services__img">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Планшет"
                 width="370"
@@ -349,6 +358,7 @@
           <ul class="section-team__photo">
             <li class="section-team__picture">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
@@ -415,6 +425,7 @@
             </li>
             <li class="section-team__picture">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
                 src="./images/img4.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
@@ -481,6 +492,7 @@
             </li>
             <li class="section-team__picture">
               <img
+                srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x"
                 src="./images/img5.jpg"
                 alt="Микола Тарасов"
                 width="270"
@@ -547,6 +559,7 @@
             </li>
             <li class="section-team__picture">
               <img
+                srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x"
                 src="./images/img6.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
@@ -696,87 +709,91 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__address">
-          <a href="" class="logo logo--footer">
-            <span class="logo__first-part">Web</span
-            ><span class="logo__last-part--light">Studio</span>
-          </a>
-          <address>
-            <ul class="footer__address-ul">
-              <li class="footer__address-li">
+        <div class="footer__container-address">
+          <div class="footer__address">
+            <a href="" class="logo logo--footer">
+              <span class="logo__first-part">Web</span
+              ><span class="logo__last-part--light">Studio</span>
+            </a>
+            <address>
+              <ul class="footer__address-ul">
+                <li class="footer__address-li">
+                  <a
+                    class="footer__address-main link"
+                    href="https://maps.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__address-li">
+                  <a
+                    class="footer__contact link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__address-li">
+                  <a class="footer__contact link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__connection">
+            <p class="footer__connect">ПРИЄДНУЙТЕСЬ</p>
+            <ul class="footer__icons-social">
+              <li class="footer__icon-social">
                 <a
-                  class="footer__address-main link"
-                  href="https://maps.google.com"
+                  class="footer__social-link"
+                  href="https://instagram.com"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  rel="nofollow noopener noreferrer"
+                  aria-label="icon-instagram"
+                  ><svg class="footer__instagram" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__address-li">
-                <a class="footer__contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="footer__icon-social">
+                <a
+                  class="footer__social-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="icon-twitter"
+                  ><svg class="footer__twitter" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__address-li">
-                <a class="footer__contact link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer__icon-social">
+                <a
+                  class="footer__social-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="icon-facebook"
+                  ><svg class="footer__facebook" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-social">
+                <a
+                  class="footer__social-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="icon-linkedin"
+                  ><svg class="footer__linkedin" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__connection">
-          <p class="footer__connect">ПРИЄДНУЙТЕСЬ</p>
-          <ul class="footer__icons-social">
-            <li class="footer__icon-social">
-              <a
-                class="footer__social-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="icon-instagram"
-                ><svg class="footer__instagram" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-social">
-              <a
-                class="footer__social-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="icon-twitter"
-                ><svg class="footer__twitter" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-social">
-              <a
-                class="footer__social-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="icon-facebook"
-                ><svg class="footer__facebook" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-social">
-              <a
-                class="footer__social-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="icon-linkedin"
-                ><svg class="footer__linkedin" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="footer__signup">
           <p class="footer__connect">Підпишіться на розсилку</p>
