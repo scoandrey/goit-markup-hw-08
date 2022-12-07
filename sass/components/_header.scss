@@ -1,6 +1,8 @@
 .header {
   position: relative;
   &__container {
+    @extend %section;
+    padding: 0;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -11,14 +13,10 @@
     @media screen and (max-width: $tablet) {
       height: 60px;
     }
-    // @media screen and (max-width: $tablet) {
-    //   justify-content: center;
-    // }
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $tablet) {
       justify-content: center;
     }
   }
-
   &__menu-button {
     z-index: 999;
     display: inline-flex;

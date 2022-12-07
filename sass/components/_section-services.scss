@@ -3,13 +3,10 @@
     display: none;
   }
   &__container { 
+    @extend %section;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 94px;
   }
   &__main-name {

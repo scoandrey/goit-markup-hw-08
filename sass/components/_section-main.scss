@@ -1,11 +1,9 @@
 .section-main {
   &__container {
-    max-width: 1600px;
+    @extend %section;
     width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-size: cover;
     background-position: center;
     background-color: #c4c4c4;
@@ -47,6 +45,8 @@
       }
     }
     @media screen and (min-width: 1201px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
@@ -74,9 +74,6 @@
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    @media screen and (min-width: $mobile) {
-      padding-top: 118px;
-    }
     @media screen and (min-width: $desctop) {
       width: 696px;
       font-weight: 900;

@@ -1,14 +1,17 @@
 .section-team {
   &__container {
+    @extend %section;
+    // margin-top: 60px;
+    // margin-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
     background: #f5f4fa;
     @media screen and (min-width: $mobile) {
-      margin-top: 60px;
+      // margin-top: 60px;
       padding-bottom: 60px;
     }
     @media screen and (min-width: $tablet) {
-      margin-top: 60px;
+      // margin-top: 60px;
       margin-bottom: 60px;
     }
     @media screen and (min-width: $desctop) {
@@ -24,7 +27,7 @@
   }
   &__name {
     margin-bottom: 30px;
-    padding-top: 60px;
+    // padding-top: 60px;
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
@@ -57,10 +60,17 @@
     }
   }
   &__picture {
+    width: 450px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desctop) {
+      width: 270px;
+    }
     @media screen and (max-width: $tablet) {
       &:not(:last-child) {
         margin-bottom: 30px;
@@ -71,11 +81,8 @@
         margin-right: 30px;
       }
     }
-    @media screen and (max-width: $desctop) {
-      width: 354px;
-    }
     &:nth-child(2n + 1) {
-      @media screen and (max-width: $desctop) {
+      @media screen and (min-width: $tablet) {
         margin-right: 30px;
       }
     }

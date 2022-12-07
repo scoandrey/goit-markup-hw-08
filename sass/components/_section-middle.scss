@@ -1,22 +1,25 @@
 .section-middle {
-  &__container {
-    padding-left: 15px;
-    padding-right: 15px;
-    @media screen and (min-width: $mobile) {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
+  &__container { 
+    @extend %section;
     @media screen and (min-width: $tablet) {
       margin-top: 60px;
       margin-bottom: 60px;
     }
+    // @media screen and (max-width: $desctop) {
+    //   margin-top: 60px;
+    //   margin-bottom: 60px;
+    // }
     @media screen and (min-width: $desctop) {
       display: flex;
       width: $desctop;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 94px;
-      margin-bottom: 94px;
+      // margin-top: 94px;
+      // margin-bottom: 94px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+      padding-top: 94px;
     }
   }
   &__skills {
@@ -34,13 +37,16 @@
     }
   }
   &__skill-general {
-    @media screen and (max-width: $desctop) {
+    @media screen and (min-width: $tablet) {
 width: 354px;
     }
+    @media screen and (min-width: $desctop) {
+      width: 270px;
+          }
   }
   &__skill-one,
   &__skill-three {
-  @media screen and (max-width: $desctop) {
+  @media screen and (min-width: $tablet) {
       margin-right: 30px;
     }
   }
@@ -81,7 +87,7 @@ width: 354px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       text-align: center;
     }
     @media screen and (min-width: $desctop) {
@@ -101,27 +107,21 @@ width: 354px;
     }
   }
   &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #f5f4fa;
     border-radius: 4px;
     @media screen and (min-width: $mobile) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 450px;
       height: 120px;
       margin-bottom: 30px;
     }
     @media screen and (min-width: $tablet) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 354px;
       height: 120px;
     }
     @media screen and (min-width: $desctop) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 270px;
       min-height: 120px;
       margin-bottom: 30px;
