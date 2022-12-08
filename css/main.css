@@ -1,5 +1,4 @@
 .footer__container, .section-clients__container, .section-team__container, .section-middle__container, .section-services__container, .section-main__container, .header__container, .container {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -21,6 +20,7 @@
 @media screen and (min-width: 1200px) {
   .footer__container, .section-clients__container, .section-team__container, .section-middle__container, .section-services__container, .section-main__container, .header__container, .container {
     width: 1200px;
+    max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }

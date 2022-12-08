@@ -8,7 +8,6 @@ $background-color: hsl(0, 0%, 100%);
 $background-color-btn: #188ce8;
 
 %section {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -24,6 +23,7 @@ $background-color-btn: #188ce8;
   }
   @media screen and (min-width: $desctop) {
     width: $desctop;
+    max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
