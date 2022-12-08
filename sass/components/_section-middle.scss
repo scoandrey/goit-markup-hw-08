@@ -1,21 +1,9 @@
 .section-middle {
-  &__container { 
+  &__container {
     @extend %section;
-    @media screen and (min-width: $tablet) {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-    // @media screen and (max-width: $desctop) {
-    //   margin-top: 60px;
-    //   margin-bottom: 60px;
-    // }
     @media screen and (min-width: $desctop) {
       display: flex;
       width: $desctop;
-      margin-left: auto;
-      margin-right: auto;
-      // margin-top: 94px;
-      // margin-bottom: 94px;
       margin-top: 0;
       margin-bottom: 0;
       padding: 0;
@@ -38,23 +26,16 @@
   }
   &__skill-general {
     @media screen and (min-width: $tablet) {
-width: 354px;
+      width: 354px;
     }
     @media screen and (min-width: $desctop) {
       width: 270px;
-          }
-  }
-  &__skill-one,
-  &__skill-three {
-  @media screen and (min-width: $tablet) {
-      margin-right: 30px;
     }
   }
   &__skill-one,
-  &__skill-four {
-    @media screen and (min-width: $desctop) {
-      display: flex;
-      flex-direction: column;
+  &__skill-three {
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
     }
   }
   &__skill-two,
@@ -62,8 +43,11 @@ width: 354px;
     @media screen and (min-width: $desctop) {
       display: flex;
       flex-direction: column;
-      width: 270px;
-      height: 74px;
+    }
+  }
+  &__skill-three {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
     }
   }
   &__skill-one,
@@ -72,11 +56,14 @@ width: 354px;
     @media screen and (min-width: $mobile) {
       margin-bottom: 30px;
     }
-
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 0px;
+    }
     @media screen and (min-width: $desctop) {
       margin-right: 30px;
     }
   }
+
   &__skill-four {
     padding: 0;
   }

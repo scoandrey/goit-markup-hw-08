@@ -88,10 +88,13 @@
     fill: currentColor;
   }
   &__item-mail {
-    margin-right: 30px;
+    
     @media screen and (max-width: $desctop) {
       margin-top: 21px;
       margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desctop) {
+      margin-right: 30px;
     }
   }
   &__item-tel {

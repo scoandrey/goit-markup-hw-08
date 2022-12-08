@@ -11,21 +11,19 @@ $background-color-btn: #188ce8;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
   @media screen and (min-width: $mobile) {
     width: $mobile;
-    padding: 0 15px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
   @media screen and (min-width: $tablet) {
     width: $tablet;
-    padding: 0 15px;
-    // padding-top: 60px;
-    // padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: $desctop) {
     width: $desctop;
-    padding: 0 15px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
