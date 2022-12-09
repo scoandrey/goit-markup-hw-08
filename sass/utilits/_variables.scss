@@ -10,16 +10,12 @@ $background-color-btn: #188ce8;
 %section {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  padding: 60px 15px;
   @media screen and (min-width: $mobile) {
     width: $mobile;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   @media screen and (min-width: $tablet) {
     width: $tablet;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   @media screen and (min-width: $desctop) {
     width: $desctop;

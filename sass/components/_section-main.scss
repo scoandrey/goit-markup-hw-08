@@ -1,67 +1,67 @@
 .section-main {
-  &__container {
-    @extend %section;
-    width: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-size: cover;
-    background-position: center;
-    background-color: #c4c4c4;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg480.jpg);
+  @media screen and (min-width: 481px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/bgmain.jpg);
-    @media screen and (min-width: 481px) {
+      url(../images/bg480.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/bgmain.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../images/bg@2x.jpg);
-      }
+        url(../images/bg480@2x.jpg);
     }
-    @media screen and (min-width: 769px) {
+  }
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg768.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/bgmain.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../images/bg@2x.jpg);
-      }
+        url(../images/bg768@2x.jpg);
     }
-    @media screen and (min-width: 1201px) {
-      padding-top: 200px;
-      padding-bottom: 200px;
+  }
+  @media screen and (min-width: 1201px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg1200.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/bgmain.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../images/bg@2x.jpg);
-      }
+        url(../images/bg1200@2x.jpg);
     }
+  }
+  &__container {
+    @extend %section;
   }
   &__name {
     width: 360px;
