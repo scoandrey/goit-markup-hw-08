@@ -21,9 +21,6 @@
     line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
-    // @media screen and (max-width: $tablet) {
-    //   padding-top: 60px;
-    // }
     @media screen and (min-width: $desctop) {
       margin-bottom: 50px;
       margin-left: auto;
@@ -87,9 +84,6 @@
   &__names {
     text-align: center;
     padding-top: 30px;
-    @media screen and (min-width: $desctop) {
-      padding-top: 50px;
-    }
   }
   &__person-name {
     margin-bottom: 10px;
