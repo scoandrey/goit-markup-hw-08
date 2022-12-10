@@ -28,7 +28,7 @@
           aria-controls="header__menu-container"
           data-menu-button
         >
-          <svg width="24" height="16" aria-label="Мобильное меню">
+          <svg width="40" height="40" aria-label="Мобильное меню">
             <use
               class="header__icon-menu"
               href="./images/icons.svg#icon-menu"
@@ -44,22 +44,22 @@
           id="header__menu-container"
           data-menu
         >
-          <ul>
-            <li class="header__menu-nav">
+          <ul class="header__menu-nav">
+            <li class="header__menu-nav-list">
               <a
                 class="header__menu-link"
                 href="https://scoandrey.github.io/goit-markup-hw-08/"
                 >Студія</a
               >
             </li>
-            <li class="header__menu-nav">
+            <li class="header__menu-nav-list">
               <a
                 class="header__menu-link"
                 href="https://scoandrey.github.io/goit-markup-hw-08/portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="header__menu-nav">
+            <li class="header__menu-nav-list">
               <a class="header__menu-link" href="">Контакти</a>
             </li>
           </ul>
@@ -368,13 +368,35 @@
           <h2 class="section-team__name">Наша команда</h2>
           <ul class="section-team__photo">
             <li class="section-team__picture">
-              <img
-                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
-                src="./images/img3.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img3-1200@1x.jpg 1x,
+                    ./images/img3-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-768@1x.jpg 1x,
+                    ./images/img3-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-480@1x.jpg 1x,
+                    ./images/img3-480@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img3-480@1x.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="section-team__names">
                 <h3 class="section-team__person-name">Ігор Дем'яненко</h3>
                 <p class="section-team__prof">Product Designer</p>
@@ -435,13 +457,35 @@
               </ul>
             </li>
             <li class="section-team__picture">
-              <img
-                srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
-                src="./images/img4.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img4-1200@1x.jpg 1x,
+                    ./images/img4-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-768@1x.jpg 1x,
+                    ./images/img4-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-480@1x.jpg 1x,
+                    ./images/img4-480@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img4-480@1x.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="section-team__names">
                 <h3 class="section-team__person-name">Ольга Рєпіна</h3>
                 <p class="section-team__prof">Frontend Developer</p>
@@ -502,13 +546,35 @@
               </ul>
             </li>
             <li class="section-team__picture">
-              <img
-                srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x"
-                src="./images/img5.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img5-1200@1x.jpg 1x,
+                    ./images/img5-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img5-768@1x.jpg 1x,
+                    ./images/img5-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img5-480@1x.jpg 1x,
+                    ./images/img5-480@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img5-480@1x.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="section-team__names">
                 <h3 class="section-team__person-name">Микола Тарасов</h3>
                 <p class="section-team__prof">Marketing</p>
@@ -569,13 +635,35 @@
               </ul>
             </li>
             <li class="section-team__picture">
-              <img
-                srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x"
-                src="./images/img6.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img6-1200@1x.jpg 1x,
+                    ./images/img6-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img6-768@1x.jpg 1x,
+                    ./images/img6-768@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img6-480@1x.jpg 1x,
+                    ./images/img6-480@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/img6-480@1x.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="section-team__names">
                 <h3 class="section-team__person-name">Михайло Єрмаков</h3>
                 <p class="section-team__prof">UI Designer</p>

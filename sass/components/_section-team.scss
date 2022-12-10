@@ -1,7 +1,8 @@
 .section-team {
+  background: #f5f4fa;
   &__container {
     @extend %section;
-    background: #f5f4fa;
+    
     @media screen and (min-width: $desctop) {
       display: flex;
       flex-direction: column;
@@ -20,9 +21,9 @@
     line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
-    @media screen and (max-width: $tablet) {
-      padding-top: 60px;
-    }
+    // @media screen and (max-width: $tablet) {
+    //   padding-top: 60px;
+    // }
     @media screen and (min-width: $desctop) {
       margin-bottom: 50px;
       margin-left: auto;

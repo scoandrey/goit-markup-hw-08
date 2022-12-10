@@ -1,4 +1,5 @@
 .section-main {
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   width: auto;
@@ -62,6 +63,8 @@
   }
   &__container {
     @extend %section;
+    
+    padding: 0px;
   }
   &__name {
     width: 360px;

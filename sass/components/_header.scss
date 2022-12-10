@@ -19,8 +19,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 40px;
-    height: 40px;
     top: 10px;
     right: 15px;
     margin: 0;
@@ -34,7 +32,6 @@
   }
   &__menu-button &__icon-close {
     display: none;
-
   }
   &__menu-button.is-open &__icon-close {
     display: block;
@@ -42,6 +39,14 @@
     &:focus {
       color: $accent;
     }
+  }
+  &__icon-menu {
+    width: 24px;
+    height: 16px;
+  }
+  &__icon-close {
+    width: 18.67px;
+    height: 18.67px;
   }
   &__menu-button.is-open &__icon-menu {
     display: none;
@@ -59,12 +64,11 @@
     }
   }
   &__menu-nav {
-    display: block;
+    margin-top: 48px;
     margin-left: 40px;
-
-    &:first-child {
-      margin-top: 48px;
-    }
+  }
+  &__menu-nav-list {
+    display: block;
     &:not(:first-child) {
       margin-top: 32px;
     }
@@ -80,10 +84,12 @@
       color: $accent;
     }
   }
+  &__menu-address {
+    margin-top: 302px;
+    margin-left: 40px;
+    margin-bottom: 64px;
+  }
   &__menu-tel {
-    position: absolute;
-    left: 40px;
-    bottom: 194px;
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
@@ -98,9 +104,7 @@
     color: $accent;
   }
   &__menu-mail {
-    position: absolute;
-    left: 40px;
-    bottom: 134px;
+    margin-top: 32px;
   }
   &__menu-mail-link {
     font-weight: 500;
@@ -111,9 +115,8 @@
   }
   &__menu-social-list {
     display: flex;
-    position: absolute;
-    left: 40px;
-    bottom: 48px;
+    margin-left: 40px;
+    margin-bottom: 48px;
   }
   &__menu-social {
     &:not(:last-child) {

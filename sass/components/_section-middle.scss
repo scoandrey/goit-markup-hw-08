@@ -6,7 +6,7 @@
       width: $desctop;
       margin-top: 0;
       margin-bottom: 0;
-      padding: 0;
+      // padding: 0;
       padding-top: 94px;
     }
   }
@@ -46,11 +46,7 @@
       flex-direction: column;
     }
   }
-  &__skill-three {
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
-    }
-  }
+
   &__skill-one,
   &__skill-two,
   &__skill-three {
@@ -64,7 +60,11 @@
       margin-right: 30px;
     }
   }
-
+  &__skill-three {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
   &__skill-four {
     padding: 0;
   }
